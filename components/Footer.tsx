@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Code, Users, MessageCircle, Mail } from 'lucide-react';
 
 export default function Footer() {
@@ -14,8 +15,7 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="mb-12 pb-12 border-b border-gray-800"
-        >
-          <h3 className="text-lg font-semibold mb-6">Certifications & Trust</h3>
+        >        <h3 className="text-lg font-semibold mb-6">Certifications & Trust</h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-[#FF6B00] rounded-lg flex items-center justify-center">
@@ -56,17 +56,13 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#FF6B00] rounded-lg flex items-center justify-center">
-                <div className="flex gap-1">
-                  <div className="w-1.5 h-1.5 bg-white rounded-full" />
-                  <div className="w-1.5 h-1.5 bg-white rounded-full" />
-                  <div className="w-1.5 h-1.5 bg-white rounded-full" />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-sm font-bold text-[#FF6B00] font-['Montserrat']">R18</span>
-                <span className="text-xs font-light text-[#0A3D9C] font-['Inter']">AI LABS</span>
-              </div>
+              <Image
+                src="/footer.svg"
+                alt="R18 AI Labs Logo"
+                width={300}
+                height={100}
+                className="h-12 w-auto"
+              />
             </Link>
             <p className="text-sm text-gray-400">
               Building safe, scalable AI solutions for enterprise challenges.
@@ -196,7 +192,7 @@ export default function Footer() {
           className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center"
         >
           <p className="text-sm text-gray-400 mb-4 sm:mb-0">
-            © 2026 R18 AI LABS. All rights reserved.
+            ©2026 <span className="text-[#FF6B00] font-semibold">R18 AI Labs</span> | All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-[#FF6B00] transition-colors">
@@ -206,18 +202,6 @@ export default function Footer() {
               Terms of Service
             </a>
           </div>
-        </motion.div>
-
-        {/* Contact Info */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-8 text-center text-sm text-gray-500"
-        >
-          <p>
-            Built with ❤️ by <span className="text-[#FF6B00] font-semibold">R18 AI Labs</span> in India
-          </p>
         </motion.div>
       </div>
     </footer>

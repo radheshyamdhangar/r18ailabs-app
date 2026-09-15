@@ -1,0 +1,47 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon version - Hexagon with circuit design -->
+  <defs>
+    <style>
+      .hex-stroke { fill: none; stroke-width: 20; stroke-linecap: round; stroke-linejoin: round; }
+      .hex-blue { stroke: #0A3D9C; }
+      .hex-orange { stroke: #FF6B00; }
+      .circuit-dot { fill: #0A3D9C; }
+      .circuit-dot-orange { fill: #FF6B00; }
+      .circuit-line { stroke: #0A3D9C; fill: none; stroke-width: 16; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="190" fill="white" stroke="#f0f0f0" stroke-width="2"/>
+
+  <!-- Hexagon Logo -->
+  <g id="hexagon-icon" transform="translate(200, 200) scale(1.2)">
+    <!-- Outer hexagon - Blue -->
+    <polygon points="0,-80 70,-50 70,20 0,50 -70,20 -70,-50" class="hex-stroke hex-blue"/>
+    
+    <!-- Inner hexagon - Orange accent on left -->
+    <line x1="-90" y1="-20" x2="-30" y2="-50" class="hex-stroke hex-orange"/>
+    <line x1="-90" y1="30" x2="-30" y2="60" class="hex-stroke hex-orange"/>
+    
+    <!-- Inner hexagon - Blue -->
+    <polygon points="0,-50 50,-25 50,25 0,40 -50,25 -50,-25" class="hex-stroke hex-blue"/>
+    
+    <!-- Circuit board design inside hexagon -->
+    <!-- Top node -->
+    <circle cx="0" cy="-30" r="12" class="circuit-dot"/>
+    
+    <!-- Middle nodes -->
+    <circle cx="-40" cy="0" r="12" class="circuit-dot-orange"/>
+    <circle cx="40" cy="0" r="12" class="circuit-dot"/>
+    
+    <!-- Bottom node -->
+    <circle cx="0" cy="30" r="12" class="circuit-dot"/>
+    
+    <!-- Circuit lines connecting nodes -->
+    <line x1="0" y1="-30" x2="-40" y2="0" class="circuit-line"/>
+    <line x1="0" y1="-30" x2="40" y2="0" class="circuit-line"/>
+    <line x1="-40" y1="0" x2="40" y2="0" class="circuit-line"/>
+    <line x1="-40" y1="0" x2="0" y2="30" class="circuit-line"/>
+    <line x1="40" y1="0" x2="0" y2="30" class="circuit-line"/>
+  </g>
+</svg>

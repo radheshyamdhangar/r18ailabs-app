@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
@@ -22,19 +23,18 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-10 h-10 bg-[#FF6B00] rounded-lg flex items-center justify-center"
+            whileHover={{ scale: 1.05 }}
+            className="w-auto"
           >
-            <div className="flex gap-1">
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-              <div className="w-1.5 h-1.5 bg-white rounded-full" />
-            </div>
+            <Image
+              src="/logo-header.png"
+              alt="R18 AI Labs Logo"
+              width={500}
+              height={333}
+              priority
+              className="h-[60px] w-auto"
+            />
           </motion.div>
-          <div className="hidden sm:flex flex-col">
-            <span className="text-sm font-bold text-[#FF6B00] font-['Montserrat']">R18</span>
-            <span className="text-xs font-light text-[#0A3D9C] font-['Inter']">AI LABS</span>
-          </div>
         </Link>
 
         {/* Desktop Menu */}

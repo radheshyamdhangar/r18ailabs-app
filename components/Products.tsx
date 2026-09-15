@@ -17,7 +17,7 @@ export default function Products() {
       ],
       features: '3-agent Retriever → Verifier retry → Compliance Judge',
       highlights: ['source + page citations', 'human flag <0.75'],
-      link: 'https://github.com/radheshyamdhangar/forge-labs-frontier',
+      link: '#',
       highlighted: false,
     },
     {
@@ -26,7 +26,7 @@ export default function Products() {
       badge: 'Multilingual Real-time',
       description: 'Conversational AI for support',
       features: 'Integrates knowledge bases, CRM, ticketing systems',
-      link: 'https://github.com/radheshyamdhangar/omni-assist',
+      link: '#',
       highlighted: false,
     },
     {
@@ -35,7 +35,7 @@ export default function Products() {
       badge: 'Air-Gapped Secure',
       description: 'Fully offline, on-prem, privacy compliant',
       features: 'Enterprise-grade security for banking systems',
-      link: 'https://github.com/radheshyamdhangar/offline-banking-assistant',
+      link: '#',
       highlighted: true,
     },
     {
@@ -44,7 +44,7 @@ export default function Products() {
       badge: 'Retrieval-Augmented',
       description: 'RAG for BFSI data queries with citations',
       features: 'Azure AI Search integration, enterprise queries',
-      link: 'https://github.com/radheshyamdhangar/bfsi-rag-agent',
+      link: '#',
       highlighted: false,
     },
   ];

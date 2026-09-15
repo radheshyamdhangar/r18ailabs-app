@@ -1,0 +1,28 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Outer Circle -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#FF6B00" stroke-width="3"/>
+  
+  <!-- Inner Geometric Design - R18 concept -->
+  <g id="logo-design">
+    <!-- Top left element -->
+    <rect x="50" y="45" width="30" height="30" fill="#FF6B00" rx="4"/>
+    
+    <!-- Top right element -->
+    <rect x="120" y="45" width="30" height="30" fill="#0A3D9C" rx="4"/>
+    
+    <!-- Center element (larger) -->
+    <circle cx="100" cy="100" r="20" fill="#FF6B00"/>
+    
+    <!-- Bottom left element -->
+    <rect x="50" y="125" width="30" height="30" fill="#0A3D9C" rx="4"/>
+    
+    <!-- Bottom right element -->
+    <rect x="120" y="125" width="30" height="30" fill="#FF6B00" rx="4"/>
+  </g>
+  
+  <!-- Text - R18 -->
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B00">R18</text>
+</svg>

@@ -25,11 +25,23 @@ export const metadata: Metadata = {
   description: "Safe, scalable AI solutions for enterprise challenges. Machine Learning, AI Research, Deployment & Scale.",
   keywords: ["AI", "Machine Learning", "Artificial Intelligence", "Enterprise AI", "AI Solutions"],
   authors: [{ name: "Radheshyam Dhangar" }],
+  icons: {
+    icon: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: "R18 AI LABS",
     description: "Building the Future with Artificial Intelligence",
     type: "website",
     url: "https://r18ailabs.com",
+    images: [
+      {
+        url: "/header.svg",
+        width: 1000,
+        height: 350,
+        alt: "R18 AI LABS",
+      },
+    ],
   },
 };
 

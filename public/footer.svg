@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1000 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon with circuit design - FOOTER VERSION (White text) -->
+  <defs>
+    <style>
+      .hex-stroke { fill: none; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .hex-blue { stroke: #0A3D9C; }
+      .hex-orange { stroke: #FF6B00; }
+      .circuit-dot { fill: #0A3D9C; }
+      .circuit-dot-orange { fill: #FF6B00; }
+      .circuit-line { stroke: #0A3D9C; fill: none; stroke-width: 10; stroke-linecap: round; }
+      .text-r18 { font-family: 'Arial', 'Helvetica', sans-serif; font-size: 140px; font-weight: 900; fill: white; letter-spacing: -5px; }
+      .text-ailabs { font-family: 'Arial', 'Helvetica', sans-serif; font-size: 50px; font-weight: 300; fill: white; letter-spacing: 8px; opacity: 0.9; }
+      .underline { stroke: #FF6B00; stroke-width: 8; fill: none; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- Left Hexagon Logo -->
+  <g id="hexagon-logo">
+    <!-- Outer hexagon - Blue -->
+    <polygon points="180,60 280,30 340,90 280,150 180,180 120,120" class="hex-stroke hex-blue"/>
+    
+    <!-- Inner hexagon - Orange accent on left -->
+    <line x1="80" y1="100" x2="140" y2="70" class="hex-stroke hex-orange"/>
+    <line x1="80" y1="160" x2="140" y2="190" class="hex-stroke hex-orange"/>
+    
+    <!-- Inner hexagon - Blue -->
+    <polygon points="180,90 260,60 300,120 260,150 180,150 140,120" class="hex-stroke hex-blue"/>
+    
+    <!-- Circuit board design inside hexagon -->
+    <!-- Top node -->
+    <circle cx="200" cy="100" r="8" class="circuit-dot"/>
+    
+    <!-- Middle nodes -->
+    <circle cx="160" cy="120" r="8" class="circuit-dot-orange"/>
+    <circle cx="240" cy="120" r="8" class="circuit-dot"/>
+    
+    <!-- Bottom nodes -->
+    <circle cx="200" cy="140" r="8" class="circuit-dot"/>
+    
+    <!-- Circuit lines connecting nodes -->
+    <line x1="200" y1="100" x2="160" y2="120" class="circuit-line"/>
+    <line x1="200" y1="100" x2="240" y2="120" class="circuit-line"/>
+    <line x1="160" y1="120" x2="240" y2="120" class="circuit-line"/>
+    <line x1="160" y1="120" x2="200" y2="140" class="circuit-line"/>
+    <line x1="240" y1="120" x2="200" y2="140" class="circuit-line"/>
+  </g>
+
+  <!-- R18 Text -->
+  <text x="420" y="180" class="text-r18">R18</text>
+
+  <!-- AI LABS Text -->
+  <text x="420" y="260" class="text-ailabs">AI  LABS</text>
+
+  <!-- Underline decoration -->
+  <line x1="420" y1="285" x2="820" y2="285" class="underline"/>
+  
+  <!-- Dot at end of underline -->
+  <circle cx="835" cy="285" r="6" fill="#0A3D9C"/>
+</svg>
